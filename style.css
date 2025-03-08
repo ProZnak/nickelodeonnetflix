@@ -1,0 +1,159 @@
+/* Resetowanie styli */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🌟 Główne tło */
+body {
+    background-color: #52177a;
+    color: white;
+}
+
+/* 🌟 Nagłówek */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #3d125d;
+}
+
+.logo {
+    width: 180px;
+}
+
+/* Profil i wyszukiwarka */
+.search-profile {
+    display: flex;
+    align-items: center;
+}
+
+#searchInput {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 200px;
+    margin-right: 15px;
+}
+
+/* Profil */
+.profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Menu profilu */
+.profile-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profile:hover .profile-menu {
+    display: block;
+}
+
+/* 🌟 Układ kategorii */
+.category {
+    margin: 20px;
+}
+
+.category h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* 🌟 Poziome przewijanie filmów */
+.movie-grid {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+/* Ukrycie paska przewijania */
+.movie-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* Styl pojedynczego filmu */
+.movie {
+    position: relative;
+    width: 180px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    flex: 0 0 auto;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* 🌟 Animacja serca */
+.favorite-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+    color: white;
+}
+
+.favorite-btn.liked {
+    color: red;
+    transform: scale(1.2);
+}
+
+/* 🌟 Modal wyboru sezonu */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}

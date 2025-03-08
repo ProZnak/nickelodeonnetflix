@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Logowanie -->
+    <h2>Logowanie</h2>
+    <input type="email" id="loginEmail" placeholder="E-mail">
+    <input type="password" id="loginPassword" placeholder="Hasło">
+    <button onclick="login()">Zaloguj</button>
+
+    <!-- Rejestracja -->
+    <h2>Rejestracja</h2>
+    <input type="text" id="registerName" placeholder="Imię">
+    <input type="email" id="registerEmail" placeholder="E-mail">
+    <input type="password" id="registerPassword" placeholder="Hasło">
+
+    <h3>Wybierz zdjęcie profilowe:</h3>
+    <div class="profile-pictures">
+        <img src="Zdjęcia Profilowe/avatar1.png" onclick="selectProfilePicture('avatar1.png')">
+        <img src="Zdjęcia Profilowe/avatar2.png" onclick="selectProfilePicture('avatar2.png')">
+        <img src="Zdjęcia Profilowe/avatar3.png" onclick="selectProfilePicture('avatar3.png')">
+        <img src="Zdjęcia Profilowe/avatar4.png" onclick="selectProfilePicture('avatar4.png')">
+        <img src="Zdjęcia Profilowe/avatar5.png" onclick="selectProfilePicture('avatar5.png')">
+    </div>
+    
+    <input type="hidden" id="selectedProfilePicture">
+    <button onclick="register()">Zarejestruj</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
