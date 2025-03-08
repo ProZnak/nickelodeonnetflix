@@ -8,7 +8,7 @@ const movies = [
     { 
         id: "1", 
         title: "SpongeBob Kanciastoporty", 
-        img: "Seriale/spongebob.png", 
+        img: "Seriale/SpongeBob.png", 
         category: "kidsMovies", 
         seasons: 1, 
         driveLink: "https://drive.google.com/drive/folders/1wMu9qbG4DkZXZ8_7Gl17vNbOtDNqudds"
@@ -46,7 +46,7 @@ const movies = [
     { 
         id: "4", 
         title: "Jestem Franky", 
-        img: "Seriale/jestemfranky.jfif", 
+        img: "Seriale/JestemFranky.jfif", 
         category: "teenNick", 
         seasons: 1, 
         viderBase: {
