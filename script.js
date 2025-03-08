@@ -16,7 +16,7 @@ const movies = [
     { 
         id: "2", 
         title: "iCarly", 
-        img: "Seriale/icarly.jpg", 
+        img: "Seriale/ICarly.jpg", 
         category: "teenNick", 
         seasons: 6, 
         viderBase: {
